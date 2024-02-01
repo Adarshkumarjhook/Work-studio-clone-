@@ -10,14 +10,17 @@ yo_page_2_box.style.backgroundSize = `cover`;
 var tl = gsap.timeline();
 tl.to(".yellow_box_2", {
   top: '-100%',
+  ease: "expo.out",
   duration: 0.5,
 }).from(".yellow_box_1", {
   top: '100%',
   duration: 0.5,
   delay: 1,
+  ease: "expo.out",
 },"s").to('.loader', {
   display: "none",
   delay: "6s",
+  ease: "expo.out",
 
 })
 tl.from('.loader',{
